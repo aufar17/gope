@@ -2,7 +2,7 @@
 
 Mobile App
 
-Aplikasi : Green Opportunity for Planet of Earth (GOPE)
+Aplikasi : Green Opportunity of Planet Earth (GOPE)
 Nama : Astra Invicta
 Anggota : 
 1. Hikmal Ananta Putra
@@ -10,11 +10,22 @@ Anggota :
 3. Hanif Faturrahman Rustanto
 4. Tri Anung Nugroho
 
-![Screenshot_1705076597](https://github.com/aufar17/gope/assets/156455001/9753bd20-d161-4936-895d-bcb0a8783b8d)
-![Screenshot_1705076602](https://github.com/aufar17/gope/assets/156455001/fc820043-9d57-42af-b32a-ff4e1dfebd6e)
-![Screenshot_1705076605](https://github.com/aufar17/gope/assets/156455001/d58ec0b6-f681-4ae5-af75-a04b6f4adc3a)
-![Screenshot_1705076607](https://github.com/aufar17/gope/assets/156455001/0a18bd12-ef9f-4737-a38e-5837dd6e4496)
-![Screenshot_1705076609](https://github.com/aufar17/gope/assets/156455001/22abb754-731e-4b20-af4e-17dede234800)
+![Screenshot_2024-01-18-23-03-10-112_com example gope](https://github.com/aufar17/gope/assets/156455001/137a8546-71c4-4fb8-9889-7fc71b9ec63d)
+![Screenshot_2024-01-18-23-03-13-922_com example gope](https://github.com/aufar17/gope/assets/156455001/e0d92c3d-2689-46f6-9215-92eea692de3e)
+![Screenshot_2024-01-18-23-03-16-588_com example gope](https://github.com/aufar17/gope/assets/156455001/d3ff75ed-78fc-42f7-9c20-5ecf1ecce03b)
+![Screenshot_2024-01-18-23-03-19-748_com example gope](https://github.com/aufar17/gope/assets/156455001/391e6592-2a33-488d-802f-aa8680513d64)
+![Screenshot_2024-01-18-23-03-22-913_com example gope](https://github.com/aufar17/gope/assets/156455001/b22e4fdc-2697-4dfc-9f1e-5148bface13f)
+![Screenshot_2024-01-18-23-03-25-223_com example gope](https://github.com/aufar17/gope/assets/156455001/bc98a887-6cd1-4ec9-a09c-c7b4fdc21b32)
+![Screenshot_2024-01-18-23-04-22-932_com example gope](https://github.com/aufar17/gope/assets/156455001/5a54256b-7eb6-4313-b20f-e7e8fa51a6b0)
+![Screenshot_2024-01-18-23-04-25-899_com example gope](https://github.com/aufar17/gope/assets/156455001/7950ba13-9d05-4ba8-828b-9a062739662e)
+
+
+
+
+
+
+
+
 
 
 
