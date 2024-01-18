@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gope/article/article.dart';
+import 'package:gope/article/detailarticle.dart';
 import 'package:gope/home/homepage.dart';
 import 'package:gope/login/signin.dart';
 import 'package:gope/login/signup.dart';
@@ -14,30 +15,29 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Homepage(),
+      home: SignIn(),
       // initialRoute: '/homepage',
       routes:{
-        'signin':(context) => SignIn(),
-        'signup': (context) => SignUp(),
         '/homepage' :(context) => Homepage(),
         '/articlepage' :(context) => Articlepage(),
         '/profilepage' :(context) => Myprofile(),
-      } ,
-      
-
-
-    
+      },
+          
     );
   }
 }
 
 class MyColors {
-  static Color PrimaryColor = HexColor('#00ce4b');
-  static Color SecondaryColor = HexColor('DDE9DE');
+  static Color PrimaryColor = HexColor('#0F52BA');
+  static Color SecondaryColor = HexColor('F0FFFF');
+  static Color ThirdColor = HexColor('#4169E1');
+}
 
-
+class MyFont {
+  static String PrimaryFont = 'LeagueSpartan';
 }

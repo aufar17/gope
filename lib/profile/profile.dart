@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:gope/main.dart';
 import 'package:gope/navigationbar.dart';
+import 'package:gope/profile/about.dart';
 import 'package:gope/profile/profilpicture.dart';
+import 'package:gope/profile/settings.dart';
 
 class Myprofile extends StatelessWidget {
   const Myprofile({super.key});
@@ -15,32 +17,17 @@ class Myprofile extends StatelessWidget {
         child: Column(
           children: [
             profilePicture(),
-            Row(
-              children: [
+
                 Padding(padding: EdgeInsets.symmetric(horizontal: 55)),
                 Container(
                   child: Text(
                     'Faturrahman',
                     style: TextStyle(
                       fontSize: 30,
-                      fontFamily: 'Signika'
+                      fontFamily: MyFont.PrimaryFont
                     ),
                   ),
                 ),
-                SizedBox(width: 8,),
-                ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                  primary: Colors.white,
-                  padding: EdgeInsets.all(1),
-                  ),
-                  child: Icon(
-                    Icons.edit,
-                    size: 20,
-                    ),
-                )
-              ],
-            ),
             SizedBox(height: 40),
             Container(
               height: 260,
@@ -54,7 +41,7 @@ class Myprofile extends StatelessWidget {
                       'Account',
                       style: TextStyle(
                         fontSize: 25,
-                        fontFamily: 'Signika',
+                        fontFamily: MyFont.PrimaryFont,
                         fontWeight: FontWeight.w500
                       ),
                     ),
@@ -65,7 +52,7 @@ class Myprofile extends StatelessWidget {
                     textstyle: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.w500,
-                      fontFamily: 'Signika',
+                      fontFamily: MyFont.PrimaryFont,
                       color: Colors.black
                       
                    ) ,
@@ -82,7 +69,7 @@ class Myprofile extends StatelessWidget {
                 textstyle: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.w500,
-                      fontFamily: 'Signika',
+                      fontFamily: MyFont.PrimaryFont,
                       color: Colors.black
                    ) ,
                 icon: Icon(
@@ -97,7 +84,7 @@ class Myprofile extends StatelessWidget {
             ),
             SizedBox(height: 10),
             Container(
-              height: 260,
+              height: 350,
               color: MyColors.PrimaryColor.withOpacity(0.15),
               child: Column(
                 children: [
@@ -108,7 +95,7 @@ class Myprofile extends StatelessWidget {
                       'Apps',
                       style: TextStyle(
                         fontSize: 25,
-                        fontFamily: 'Signika',
+                        fontFamily: MyFont.PrimaryFont,
                         fontWeight: FontWeight.w500
                       ),
                     ),
@@ -119,7 +106,7 @@ class Myprofile extends StatelessWidget {
                     textstyle: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.w500,
-                      fontFamily: 'Signika',
+                      fontFamily: MyFont.PrimaryFont,
                       color: Colors.black
                    ) ,
                     icon: Icon(
@@ -127,7 +114,12 @@ class Myprofile extends StatelessWidget {
                       size: 35,
                       color: Colors.black,
                     ),
-                    press: (){},
+                    press: (){
+                      Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => About() ,
+                      )
+                      );
+                    },
                   ),
               SizedBox(height: 10),
               ProfileMenu(
@@ -135,7 +127,7 @@ class Myprofile extends StatelessWidget {
                 textstyle: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.w500,
-                      fontFamily: 'Signika',
+                      fontFamily: MyFont.PrimaryFont,
                       color: Colors.black
                    ) ,
                 icon: Icon(
@@ -145,6 +137,30 @@ class Myprofile extends StatelessWidget {
                 ),
                 press: (){},
               ),
+              SizedBox(height: 10),
+              ProfileMenu(
+                text: 'Settings',
+                textstyle: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.w500,
+                      fontFamily: MyFont.PrimaryFont,
+                      color: Colors.black
+                   ) ,
+                icon: Icon(
+                  Icons.settings,
+                  size: 35,
+                  color: Colors.black,
+                ),
+                press: (){
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Settings()
+                    )
+                    );
+                },
+              ),
+              
+              
                 ],
               ),
             ),
@@ -161,7 +177,7 @@ class Myprofile extends StatelessWidget {
                 color: Colors.red,
                       fontSize: 18,
                       fontWeight: FontWeight.w500,
-                      fontFamily: 'Signika'
+                      fontFamily: MyFont.PrimaryFont
                    ) ,
               icon: Icon(
                 Icons.logout,
@@ -176,7 +192,7 @@ class Myprofile extends StatelessWidget {
               style: TextStyle(
                 fontSize: 15,
                 fontWeight: FontWeight.w500,
-                fontFamily: 'Signika'
+                fontFamily: MyFont.PrimaryFont
               ),
               ),
             
@@ -186,7 +202,7 @@ class Myprofile extends StatelessWidget {
               style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.w500,
-                fontFamily: 'Signika'
+                fontFamily: MyFont.PrimaryFont
               ),
               ),
 
@@ -222,7 +238,7 @@ class ProfileMenu extends StatelessWidget {
       child: ElevatedButton(
         onPressed: press,
         style: ElevatedButton.styleFrom(
-          primary: Colors.grey.shade100,
+          primary: Colors.white,
           padding: EdgeInsets.all(20),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(20),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gope/main.dart';
 
 class GopeSetor extends StatelessWidget {
   const GopeSetor({super.key});
@@ -9,7 +10,7 @@ class GopeSetor extends StatelessWidget {
                 height: 100,
                 margin: const EdgeInsets.only(top: 40.0,left: 20.0,right: 20.0),
                 decoration: BoxDecoration(
-                  color: Colors.lightGreen.shade600,
+                  color: MyColors.PrimaryColor,
                    borderRadius: BorderRadius.circular(18.0),
                    boxShadow: [
                     BoxShadow(
@@ -20,7 +21,7 @@ class GopeSetor extends StatelessWidget {
                     )
                    ]
                 ),
-                child: const Row(
+                child:  Row(
                   children: [
                     Padding(
                       padding: EdgeInsets.only(left: 25.0),
@@ -39,17 +40,19 @@ class GopeSetor extends StatelessWidget {
                           'GOPE Setor',
                           style: TextStyle(
                             fontSize: 25,
-                            fontFamily: 'Signika',
-                            fontWeight: FontWeight.w700,
+                            fontFamily: MyFont.PrimaryFont,
+                            fontWeight: FontWeight.w600,
+                            color: Colors.white
                           ),
                         ),
                         SizedBox(height: 2.0,),
                         Text(
-                          'Sortir,Kemas,Setorkan',
+                          'Collect, Complete, Convert ',
                           style: TextStyle(
                             fontSize: 16,
-                            fontFamily: 'Signika',
-                            fontWeight: FontWeight.w600,
+                            fontFamily: MyFont.PrimaryFont,
+                            fontWeight: FontWeight.w400,
+                            color: Colors.white
                           ),
                         ),
                       ],
@@ -72,7 +75,7 @@ class GopeBank extends StatelessWidget {
     height: 100,
     margin: const EdgeInsets.only(top: 20.0, left: 20.0, right: 20.0),
     decoration: BoxDecoration(
-    color: Colors.lightGreen[600],
+    color: MyColors.PrimaryColor,
     borderRadius: BorderRadius.circular(18.0),
     boxShadow: [
       BoxShadow(
@@ -83,7 +86,7 @@ class GopeBank extends StatelessWidget {
       )
     ],
   ),
-  child:const Row(
+  child:Row(
     children: [
       Padding(
         padding: EdgeInsets.only(left: 25.0),
@@ -103,17 +106,22 @@ class GopeBank extends StatelessWidget {
               'GOPE Bank',
               style: TextStyle(
                 fontSize: 25,
-                fontFamily: 'Signika',
-                fontWeight: FontWeight.w700,
+                fontFamily: MyFont.PrimaryFont,
+                fontWeight: FontWeight.w600,
+                color: Colors.white
               ),
             ),
-            Text(
-              'Temukan GOPE Bank terdekat untuk setor sampah',
-              maxLines: 2,
-              style: TextStyle(
-                fontSize: 14,
-                fontFamily: 'Signika',
-                fontWeight: FontWeight.w600,
+            Padding(
+              padding: const EdgeInsets.only(right: 10.0),
+              child: Text(
+                'Find the nearest GOPE Bank to deposit waste',
+                maxLines: 2,
+                style: TextStyle(
+                  fontSize: 14,
+                  fontFamily: MyFont.PrimaryFont,
+                  fontWeight: FontWeight.w400,
+                  color: Colors.white
+                ),
               ),
             ),
           ],

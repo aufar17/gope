@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:gope/main.dart';
 import 'package:hexcolor/hexcolor.dart';
 
 class Navbar extends StatefulWidget {
@@ -60,7 +61,7 @@ class _NavigationBarState extends State<Navbar> {
                     width: index == currentIndex ? displayWidth * .32 : 0,
                     decoration: BoxDecoration(
                       color: index == currentIndex
-                      ? HexColor("00ce4b").withOpacity(0.2)
+                      ? MyColors.PrimaryColor.withOpacity(0.2)
                       : Colors.transparent,
                         borderRadius: BorderRadius.circular(50),
                     ),
@@ -112,7 +113,7 @@ class _NavigationBarState extends State<Navbar> {
                             listOfIcons[index],
                             size: displayWidth * .076,
                             color: (index == currentIndex && currentIndex >= 0 && currentIndex < listOfIcons.length) 
-                            ? Colors.green.shade400 
+                            ? Colors.blue.shade300 
                             : Colors.black,
                           ),
                         ],

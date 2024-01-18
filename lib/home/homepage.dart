@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gope/home/banksampah.dart';
+import 'package:gope/main.dart';
 import 'package:gope/navigationbar.dart';
-import 'package:hexcolor/hexcolor.dart';
+
 
 
 class Homepage extends StatefulWidget {
@@ -15,48 +16,39 @@ class HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: HexColor("DDE9DE"),
+      backgroundColor: MyColors.SecondaryColor,
       appBar: AppBar(
           title: Text(' WELCOME!',
             style: TextStyle(
-              color: Colors.black,
-              fontFamily: "Signika",
+              color: Colors.white,
+              fontFamily: MyFont.PrimaryFont,
               fontSize: 30.0,
               fontWeight: FontWeight.w600,
               letterSpacing: 2.0
               
             ) ,
           ),
-          backgroundColor: HexColor("00ce4b"),
+          backgroundColor: MyColors.PrimaryColor,
          
         ),
       body: Stack(
         children: [
           Container(
-            height: 180,
+            height: 200,
             width: double.infinity,
-            color: HexColor("00ce4b"),
+            color: MyColors.PrimaryColor,
           ),
           Row(
+            mainAxisAlignment: MainAxisAlignment.end,
             children: [
-              Padding(padding: EdgeInsets.only(left: 210)),
-              Icon(
-                Icons.money,
-                size: 50.0,
-              ),
-              SizedBox(width: 5.0,),
               Container(
-                child: Text(
-                  'GOPE',
-                  style: TextStyle(
-                    fontSize: 40,
-                    fontFamily: 'Signika',
-                    fontWeight: FontWeight.w600,
-                    letterSpacing: 2.0
-                
-                  ) ,
+                child: Image.asset(
+                  'assets/image/miniputih.png',
+                  fit: BoxFit.cover,
+                  height: 100,
+                  width: 200,
                   ),
-              ),
+              )
             ],
           ),
 
@@ -64,13 +56,14 @@ class HomepageState extends State<Homepage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                padding: EdgeInsets.only(top: 65.0,left: 40.0),
+                padding: EdgeInsets.only(top: 90.0,left: 40.0),
                 child: Text(
                   'Rustanto',
                   style: TextStyle(
                     fontSize: 25,
-                    fontFamily: 'Signika',
-                    fontWeight: FontWeight.w600
+                    fontFamily: MyFont.PrimaryFont,
+                    fontWeight: FontWeight.w600,
+                    color: Colors.white
                   ),
                 ),
               ),
@@ -80,8 +73,9 @@ class HomepageState extends State<Homepage> {
                   'fakrulroji@gmail.com',
                   style: TextStyle(
                     fontSize: 14,
-                    fontFamily: 'Signika',
-                    fontWeight: FontWeight.w500
+                    fontFamily: MyFont.PrimaryFont,
+                    fontWeight: FontWeight.w500,
+                    color: Colors.white
                   ),
                 ),
               ),
@@ -93,7 +87,7 @@ class HomepageState extends State<Homepage> {
               Container(
                 height: 70,
                 width: 380,
-                margin: const EdgeInsets.only(top: 140.0, left: 20.0,right: 20.0),
+                margin: const EdgeInsets.only(top: 170.0, left: 20.0,right: 20.0),
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(18.0),
@@ -122,14 +116,15 @@ class HomepageState extends State<Homepage> {
                               'GOPE Point',
                               style: TextStyle(
                                 fontSize: 14,
-                                fontWeight: FontWeight.w700
+                                fontWeight: FontWeight.w700,
+                                fontFamily: MyFont.PrimaryFont
                               ) ,
                             ),
                               Text(
                                 '120',
                                 style: TextStyle(
                                 fontSize: 17,
-                                fontFamily: "Signika",
+                                fontFamily: MyFont.PrimaryFont,
                                 fontWeight: FontWeight.w700,
                                 color: Colors.amber
                               ) ,
@@ -160,14 +155,15 @@ class HomepageState extends State<Homepage> {
                               'Disetor',
                               style: TextStyle(
                                 fontSize: 14,
-                                fontWeight: FontWeight.w700
+                                fontWeight: FontWeight.w700,
+                                fontFamily: MyFont.PrimaryFont
                               ) ,
                             ),
                                Text(
                                 '120',
                                 style: TextStyle(
                                 fontSize: 17,
-                                fontFamily: "Signika",
+                                fontFamily: MyFont.PrimaryFont,
                                 fontWeight: FontWeight.w700
                               ) ,
                               ),
@@ -194,7 +190,8 @@ class HomepageState extends State<Homepage> {
                           'Scan',
                           style: TextStyle(
                             fontSize: 16.0,
-                            fontWeight: FontWeight.w700
+                            fontWeight: FontWeight.w700,
+                            fontFamily: MyFont.PrimaryFont
                           ),
                           )
                       ],
@@ -202,13 +199,13 @@ class HomepageState extends State<Homepage> {
                   ],
                 )
               ),
-              const Padding(
+              Padding(
                 padding: EdgeInsets.only(left: 30.0,top: 40.0),
                 child: Text('BANK SAMPAH',
                 style: TextStyle(
-                  fontFamily: 'Signika',
+                  fontFamily: MyFont.PrimaryFont,
                   fontSize: 30,
-                  fontWeight: FontWeight.w900
+                  fontWeight: FontWeight.w700
                 ),
                 ),
               ),
@@ -225,26 +222,3 @@ class HomepageState extends State<Homepage> {
 }
 
 
-// class ClipPathCustom extends CustomClipper<Path>{
-//   @override
-//   Path getClip(Size size) {
-//     Path path = Path();
-//     path.lineTo(0, size.height - 30);
-
-//     path.quadraticBezierTo(
-//       size.width / 2, 
-//       size.height, 
-//       size.width, 
-//       size.height - 30
-//       );
-
-//     path.lineTo(size.width, 0);
-//     path.close();
-
-//     return path;
-//   }
-
-//   @override
-//   bool shouldReclip(covariant CustomClipper<Path> oldClipper) {return false;}  
-
-// }

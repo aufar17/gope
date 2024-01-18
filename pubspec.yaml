@@ -32,6 +32,7 @@ dependencies:
     sdk: flutter
   hexcolor: ^3.0.1
   carousel_slider: ^4.2.1
+  url_launcher: ^6.2.3
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -39,6 +40,7 @@ dependencies:
   cupertino_icons: ^1.0.2
 
 dev_dependencies:
+  flutter_native_splash: ^2.3.9
   flutter_test:
     sdk: flutter
     
@@ -69,11 +71,22 @@ flutter:
   assets:
      - assets/image/3r.png
      - assets/image/ecofriendly.png
-     - assets/image/ORI.png
      - assets/image/gogreen.png
      - assets/image/savetheplanet.png
      - assets/image/zerowaste.png
-
+     - assets/image/orihitam.png
+     - assets/image/oriputih.png
+     - assets/image/miniputih.png
+     - assets/image/minihitam.png
+     - assets/image/tpa-sente-di-klungkung-ditutup-karena-overload.jpeg
+     - assets/image/4-fakta-sampah-malam-tahun-baru-2024-seberat-130-ton-OjQ1XLpSb5.jpg
+     - assets/image/masalah-sampah-plastik-diharap-diangkat-pada-debat-pilpres-2024-6ui1AjvlAA.jpg
+     - assets/image/anung.jpeg
+     - assets/image/hikmal.jpeg
+     - assets/image/gopebank.png
+     - assets/image/gopesetor.png
+     - assets/image/aufar.jpeg
+     - assets/image/hanif.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
@@ -88,14 +101,19 @@ flutter:
   # example:
     
   fonts:
-   - family: Signika
+   - family: LeagueSpartan
      fonts:
-       - asset: assets/fonts/Signika-Light.ttf
-       - asset: assets/fonts/Signika.ttf
-       - asset: assets/fonts/Signika-Bold.ttf
-       - asset: assets/fonts/Signika-Medium.ttf
-       - asset: assets/fonts/Signika-Regular.ttf
-       - asset: assets/fonts/Signika-SemiBold.ttf
+       - asset: assets/fonts/leaguespartan-black.ttf
+       - asset: assets/fonts/leaguespartan-bold.ttf
+       - asset: assets/fonts/leaguespartan-extrabold.ttf
+       - asset: assets/fonts/leaguespartan-extralight.ttf
+       - asset: assets/fonts/leaguespartan-light.ttf
+       - asset: assets/fonts/leaguespartan-medium.ttf
+       - asset: assets/fonts/leaguespartan-regular.ttf
+       - asset: assets/fonts/leaguespartan-semibold.ttf
+       - asset: assets/fonts/leaguespartan-thin.ttf
+       - asset: assets/fonts/leaguespartan-variablefont_wght.ttf
+       
   #         style: italic
   #   - family: Trajan Pro
   #     fonts:
